@@ -1,0 +1,8 @@
+1. Producer
+
+Producer là những application produce data và gửi data tới Kafka Server. Data này sẽ là những message có định dạng, được gửi dưới dạng mảng byte tới Kafka server. Ví dụ như các bạn có một tập tin .txt chứa text bên trong,
+chúng ta có thể dùng Producer để đọc từng dòng trong tập tin này rồi gửi tới Kafka server.
+
+2. Consumer
+
+Kafka sử dụng consumer để subscribe vào topic, các consumer được định danh bằng các group name. Nhiều consumer có thể cùng đọc một topic. Sau khi nhận được data, Consumer có thể thêm code để xử lý data theo nhu cầu của mình.
